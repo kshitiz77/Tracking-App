@@ -1,4 +1,4 @@
-package com.helloworld.newarchitecture;
+package com.trackingapp.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.helloworld.BuildConfig;
-import com.helloworld.newarchitecture.components.MainComponentsRegistry;
-import com.helloworld.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.trackingapp.BuildConfig;
+import com.trackingapp.newarchitecture.components.MainComponentsRegistry;
+import com.trackingapp.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

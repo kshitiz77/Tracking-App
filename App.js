@@ -11,13 +11,16 @@ const App = () => {
   const {longitude, latitude} = currentLocation;
 
   useEffect(() => {
-    Geolocation.getCurrentPosition((info) =>{
-      setCurrentLocation({
-        latitude: info.coords.latitude,
-        longitude: info.coords.longitude,
-      });
-      // console.log(info, "Current Position")
+    const interval = setInterval(()=>{
+      Geolocation.getCurrentPosition((info) =>{
+        setCurrentLocation({
+          latitude: info.coords.latitude,
+          longitude: info.coords.longitude,
+        });
+        console.log(info, "Current Position")
     })
+    }, 5000)
+    return () => clearInterval(interval);
   },[currentLocation]);
 
   return (
